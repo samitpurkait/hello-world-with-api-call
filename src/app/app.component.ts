@@ -15,7 +15,7 @@ export class AppComponent {
 
   public callApi(){
     this.http.get<string>(this.apiUrl).subscribe(data => {
-      this.result = 'test';
+      this.result = data;
       }
     );
   }
